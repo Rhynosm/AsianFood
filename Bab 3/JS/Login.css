@@ -1,0 +1,141 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+  
+  header {
+    width: 100%;
+    background-color: #333;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    transition: all 0.2s ease;
+  }
+  
+  header a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  main {
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 4rem 0;
+    text-align: center;
+  }
+  
+  .form-login {
+    margin: 2rem 0;
+  }
+  
+  .form-login input[type="text"],
+  .form-login input[type="password"],
+  .form-login input[type="email"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.4rem;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 1.2rem;
+  }
+  
+  .form-login input[type="submit"] {
+    background-color: #007bff;
+    border: none;
+    padding: 0.6rem 1.6rem;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  
+  .form-login input[type="submit"]:hover {
+    background-color: #0069d9;
+  }
+  
+  footer {
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+  
+  .center {
+    display: table;
+    margin: 0 auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    header {
+      font-size: 1.1rem;
+    }
+  
+    main {
+      margin: 1rem;
+    }
+  
+    .form-login input[type="text"],
+    .form-login input[type="password"],
+    .form-login input[type="email"] {
+      padding: 0.6rem;
+      font-size: 1.1rem;
+    }
+  
+    .form-login input[type="submit"] {
+      font-size: 1.1rem;
+    }
+  
+    footer {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      font-size: 1rem;
+    }
+  
+    main {
+      margin: 0.5rem;
+    }
+  
+    .form-login input[type="text"],
+    .form-login input[type="password"],
+    .form-login input[type="email"] {
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+  
+    .form-login input[type="submit"] {
+      padding: 0.5rem 1.5rem;
+    }
+}
