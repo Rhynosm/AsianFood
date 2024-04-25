@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>asianfoodmarketloginpage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+    <header>
+        <center>
+            <img src="logo.jpeg" alt="" />
+            <h1>Welcome To Asian Food Market</h1>
+        </center>
+        <a href="index.html" >Home</a>
+        <a href="Login.html" >Login</a>
+        <a href="Register.html" >Register</a>
+
+    </header>
+    <main>
+        <div class="form-login">
+            <center>
+                <h2>Login To Your A-Mart Account </h2>
+                <input type="text" id="username" name="username" placeholder="Username" />
+                <input type="password" name="password" placeholder="Password" />
+                <button onclick="myFunction()">Login</button>
+            </center>
+            <center>
+                <p>Don't Have A-Mart Account??</p>
+                <a href="register.html">Register Here!!</a>
+            </center>
+        </div>
+    </main>
+    
+    <footer>
+        <center>
+            <p>&copy; 2023 Our Asian Food Market Website. All rights reserved.</p>
+        </center>
+    </footer>
+    <script>
+        function myFunction() {
+            var username = document.getElementById("username").value;
+            alert("Welcome, " + username + "Anda Sudah Berhasil Login!");
+        }
+    </script>
+</body>
+
+</html>
