@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+
+header a:hover {
+    color: #ccc;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+#carousel img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+
+footer a:hover {
+    color: #ccc;
+}
+
+@media (max-width: 767.98px) {
+    .flex3column {
+      flex-direction: column;
+    }
+  
+    .bigaside,
+    .smallaside,
+    .maincontent {
+      flex-basis: 100%;
+      margin: 1rem 0;
+    }
+}

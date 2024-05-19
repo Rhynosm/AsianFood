@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; 
+    color: #000; 
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #000; 
+    padding-top: 20px;
+    z-index: 1000;
+    overflow-y: auto;
+    transition: 0.3s;
+}
+
+.logo-details {
+    display: flex;
+    align-items: center;
+    color: #fff; 
+    padding: 10px 15px;
+}
+
+.logo-details i {
+    font-size: 28px;
+    margin-right: 5px;
+}
+
+.logo_name {
+    font-size: 24px;
+}
+
+.nav-links {
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.nav-links li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.nav-links li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff; 
+    transition: 0.3s;
+}
+
+.nav-links li a.active,
+.nav-links li a:hover {
+    color: #ffb72b; 
+}
+
+.nav-links li a i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.home-section {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000; 
+    color: #fff; 
+}
+
+.sidebar-button {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.profile-details {
+    display: flex;
+    align-items: center;
+}
+
+.admin_name {
+    margin-right: 10px;
+}
+
+.home-content {
+    background-color: #f2f2f2; 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.home-content h3 {
+    margin-bottom: 20px;
+    color: #333; 
+}
+
+.table-data {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-data th,
+.table-data td {
+    padding: 10px;
+    border: 1px solid #ccc; 
+}
+
+.table-data th {
+    background-color: #333; 
+    color: #fff; 
+}
+
+.table-data tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+
+.btn_detail {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffb72b; 
+    color: #000; 
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn_detail:hover {
+    background-color: #eba416; 
+}
+
+.active {
+    width: 70px;
+}
+
+.active .logo-details .logo_name {
+    display: none;
+}
+
+.active .nav-links li a {
+    justify-content: center;
+}
+
+.active .nav-links li a i {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 70px;
+    }
+
+    .sidebar.active {
+        width: 250px;
+    }
+
+    .home-section {
+        margin-left: 70px;
+    }
+
+    .sidebar-button {
+        display: block;
+    }
+}
