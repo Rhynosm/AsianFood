@@ -4,6 +4,9 @@
 <button type="button" class="btn btn-tambah">
     <a href="/category/tambah" style="color: white; text-decoration: none;">Tambah Data</a>
 </button>
+<button type="button" class="btn btn-tambah">
+  <a href="/category/cetak">Cetak</a>
+</button>
 <table class="table table-striped">
     <thead>
         <tr>
